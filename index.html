@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+<style>
+    .container {
+        font-size: 40px;
+        width: 100%;
+        background-color: white;
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+
+    .aboutButton {
+        color: #222222;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        font-size: 14px;
+        font: 14px Roboto, sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .storeButton {
+        color: #222222;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: 14px;
+        font: 14px Roboto, sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .GmailButton {
+        color: #222222;
+        grid-column: 13 / 14;
+        grid-row: 1 / 2;
+        font-size: 14px;
+        font: 14px Roboto, sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .imagesButton {
+        color: #222222;
+        grid-column: 14 / 15;
+        grid-row: 1 / 2;
+        font-size: 14px;
+        font: 14px Roboto, sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .dotsButton {
+        grid-column: 15 / 16;
+        grid-row: 1 / 2;
+        justify-self: center;        
+        align-self: center;
+    }
+
+    .accountButton {
+        grid-column: 16 / 17;
+        grid-row: 1 / 2;
+        padding-top: 10%;
+        justify-self: center;        
+        align-self: center;
+    }
+
+    .googleImage {
+        grid-column: 5 / 13;
+        grid-row: 5 / 8;
+        justify-self: center;        
+        align-self: start; 
+    }
+
+    .searchRounded {
+        grid-column: 4 / 14;
+        grid-row: 6 / 9;
+        justify-self: center;
+        padding-top: 5%;
+        align-self: center;
+    }
+
+    .searchBar {
+        grid-column: 5 / 8;
+        grid-row: 7 / 9;
+        justify-self: start;
+        align-self: start;
+        padding-top: 5%;
+        font: Roboto, sans-serif;
+    }
+
+    *:focus {
+        outline: 0 !important;
+        background-color: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,   
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active {
+        box-shadow: white;
+        -webkit-box-shadow: 0 0 0 50px white inset !important;
+    }
+
+    .googleSearchButton {
+        grid-column: 7 / 9;
+        grid-row: 7 / 10;
+        justify-self: right;
+        align-self: center;
+        padding-top: 20%;
+        font: 16px Roboto, sans-serif;
+    }
+
+    .imFeelingLucky {
+        grid-column: 9 / 12;
+        grid-row: 7 / 10;
+        justify-self: center;
+        align-self: center;
+        padding-top: 14%;
+        font: 16px Roboto, sans-serif;
+    }
+
+    .grayBox {
+        grid-column: 1 / 17;
+        grid-row: 14 / 16;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .advertising {
+        grid-column: 3 / 4;
+        grid-row: 15 / 16;
+        justify-self: center;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+
+    .business {
+        grid-column: 4 / 6;
+        grid-row: 15 / 16;
+        justify-self: center;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+
+    .howSearchWorks {
+        grid-column: 5 / 8;
+        grid-row: 15 / 16;
+        justify-self: end;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+
+    .privacy {
+        grid-column: 11 / 13;
+        grid-row: 15 / 16;
+        justify-self: center;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+
+    .terms {
+        grid-column: 12 / 14;
+        grid-row: 15 / 16;
+        justify-self: center;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+
+    .settings {
+        grid-column: 13 / 15;
+        grid-row: 15 / 16;
+        justify-self: center;
+        align-self: center;
+        font: 14px Roboto, sans-serif;
+        color: rgb(120, 120, 120);
+    }
+</style>
+
+
+<html lang="en">
+    <head>
+        <meta charset="Arial">
+    </head>
+    <body>
+        <div class="container">
+            <div class="aboutButton">About</div>
+            <div class="storeButton">Store</div>
+            <div class="GmailButton">Gmail</div>
+            <div class="imagesButton">Images</div>
+            <div class="dotsButton">
+                <img src="apps.png" alt="Apps">
+            </div>
+            <div class="accountButton">
+                <img src="account.jpg" alt="Accounts">
+            </div>
+            <div class="googleImage">
+                <img src="google.png" alt="Foogle">
+            </div>
+            <div class="searchRounded">
+                <img src="SearchBar.png" alt="Search Bar">
+            </div>
+            <div class="searchBar">
+                <form id="form">
+                    <input type="search" id="searchB" style="height:45px;width:450px;font-size:16px;
+                    border-color:transparent;" name="foogleSearchBar">
+                </form>
+            </div>
+            <div class="googleSearchButton">
+                <button type="button" style="background-color: #f3f3f3; color: #3d3d3d;border-width:0;width:135px;height:36px;font-size:15px;">Google Search</button>
+            </div>
+            <div class="imFeelingLucky">
+                <button style="background-color: #f3f3f3; color: #3d3d3d;border-width:0;width:135px;height:36px;font-size:15px;"> I'm Feeling Lucky</button>
+            </div>
+            <div class="grayBox"></div>
+            <div class="advertising">Advertising</div>
+            <div class="business">Business</div>
+            <div class="howSearchWorks">How Search Works</div>
+            <div class="privacy">Privacy</div>
+            <div class="terms">Terms</div>
+            <div class="settings">Settings</div>
+        </div>
+        
+    </body>
+</html>
+
